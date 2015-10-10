@@ -1,10 +1,39 @@
-<div ng-controller="MainController" ng-cloak="">
+<div ng-controller="MainController as main" ng-cloak="" layout="column">
+  <div layout="row" flex>
+    <md-sidenav layout="column" class="md-sidenav-left md--white-frame-z2" md-component-id="left">
+      <md-toolbar class="md-theme-light">
+         <h1 class="md-toolbar-tools">Sidenav Right</h1>
+      </md-toolabar>
+      <md-content layout="column" flex><div style="color:black">Sidenav Content</div></md-content>
+    </md-sidenav>
 
+    <div layout="column" flex id="content">
+      <md-toolbar layout="row">
+        <div class="md-toolbar-tools">
+          <md-button class="md-icon-button" aria-label="Menu" ng-click="main.toggleSidenav('left')">
+            <md-icon md-svg-icon="assets/images/icons/menu.svg"></md-icon>
+          </md-button>
+          <h2>
+            <span>Toolbar with Icon Buttons</span>
+          </h2>
+          <span flex=""></span>
+          <md-button class="md-icon-button" aria-label="Favorite">
+            <md-icon md-svg-icon="assets/images//icons/favorite.svg" style="color: greenyellow;"></md-icon>
+          </md-button>
+          <md-button class="md-icon-button" aria-label="More">
+            <md-icon md-svg-icon="assets/images/icons/more_vert.svg"></md-icon>
+          </md-button>
+        </div>
+      </md-toolbar>
+      <md-content layout="column" flex> Page Content</md-content>
+    </div>
+  </div>
+  <!--
   <md-content>
 
-    <md-toolbar>
+    <md-toolbar layout="row">
       <div class="md-toolbar-tools">
-        <md-button class="md-icon-button" aria-label="Settings">
+        <md-button class="md-icon-button" aria-label="Menu" ng-click="main.toggleSidenav('left')">
           <md-icon md-svg-icon="assets/images/icons/menu.svg"></md-icon>
         </md-button>
         <h2>
@@ -19,6 +48,20 @@
         </md-button>
       </div>
     </md-toolbar>
-  </md-content>
 
+    <div layout="row" flex>
+      <md-sidenav layout="column" class="md-sidenav-left md--white-frame-z2" md-component-id="left">
+        <md-toolbar class="md-theme-light">
+           <h1 class="md-toolbar-tools">Sidenav Right</h1>
+        </md-toolabar>
+      </md-sidenav>
+
+      <div layout="column" flex id="content">
+         <md-content layout="column" flex class="md-padding">
+            Page content
+         </md-content>
+      </div>
+    </div>
+  ></md-content>
+-->
 </div>

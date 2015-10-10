@@ -6,9 +6,11 @@
 /// <reference path="index.run.ts" />
 /// <reference path="main/main.controller.ts" />
 
+declare var mdSidenav : any;
+
 module bahadirgittimi {
   'use strict';
-  
+
   angular.module('bahadirgittimi', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngResource', 'ngRoute', 'ngMaterial'])
     .config(Config)
     .config(RouterConfig)

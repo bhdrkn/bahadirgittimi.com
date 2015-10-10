@@ -21,10 +21,6 @@
         "!node_modules/**"
     ],
     "files": [
-        "src/app/components/githubContributor/githubContributor.service.ts",
-        "src/app/components/malarkey/malarkey.directive.ts",
-        "src/app/components/navbar/navbar.directive.ts",
-        "src/app/components/webDevTec/webDevTec.service.ts",
         "src/app/index.config.ts",
         "src/app/index.module.ts",
         "src/app/index.route.ts",
