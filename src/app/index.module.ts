@@ -16,5 +16,6 @@ module bahadirgittimi {
     .config(RouterConfig)
     .run(RunBlock)
     .service('yesNoService', YesNoService)
-    .controller('MainController', MainController);
+    .controller('MainController', MainController)
+    .controller('TimeDialogController', TimeDialogController)
 }

@@ -19,6 +19,10 @@ module bahadirgittimi {
     }
 
     public showAlert(event : MouseEvent){
+      this.showAdvanced(event);
+
+    }
+    public showEmbed(event : MouseEvent){
       this.dialogService.show(
         this.dialogService.alert().title('Ne kadar kaldı? ve Ne kadardır Sürüyor?')
                                   .content('Açık konuşmak gerekirse ne kadar kaldığını bende bilmiyorum. Tek umudum yakın zamanda bitmesi.</p>'+
@@ -33,6 +37,44 @@ module bahadirgittimi {
                                   .targetEvent(event)
                                   .clickOutsideToClose(true)
       );
+    }
+
+    public showAdvanced(event: MouseEvent){
+      var options : ng.material.IDialogOptions = {
+        controller : TimeDialogController,
+        templateUrl : 'time.tmpl.html',
+        parent : angular.element(document.body),
+        targetEvent: event,
+        clickOutsideToClose : true,
+        locals : {
+          close : this.dialogService.hide
+        }
+      };
+      this.dialogService.show(options);
+    }
+
+    public close() {
+      this.dialogService.hide();
+    }
+  }
+
+  export class TimeDialogController {
+    private dialogService : ng.material.IDialogService;
+
+    constructor($mdDialog : ng.material.IDialogService){
+        this.dialogService = $mdDialog;
+    }
+
+    public hide() {
+      this.dialogService.hide();
+    }
+
+    public cancel() {
+      this.dialogService.cancel();
+    }
+
+    public answer(answer : any) {
+      this.dialogService.hide(answer);
     }
   }
 }
