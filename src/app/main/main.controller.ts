@@ -15,6 +15,5 @@ module bahadirgittimi {
       var sideNavObj : angular.material.ISidenavObject = this.mdSidenav(menuId);
       sideNavObj.toggle();
     }
-
   }
 }

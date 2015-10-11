@@ -1,4 +1,35 @@
-<div ng-controller="MainController as main" ng-cloak="" layout="column">
+<div ng-controller="MainController as main" ng-cloak="" layout="column" class="relative">
+
+  <md-fab-toolbar md-open="false" md-direction="right" class="overlay-content">
+  <md-fab-trigger class="align-with-text">
+    <md-button aria-label="menu" class="md-fab md-primary">
+      <md-icon md-svg-src="assets/images/icons/menu.svg"></md-icon>
+    </md-button>
+  </md-fab-trigger>
+  <md-toolbar layout="column">
+    <md-fab-actions class="md-toolbar-tools">
+      <h2>
+        Bahadır AKIN Gitti Mi?
+      </h2>
+      <md-button>
+        Nereye?
+      </md-button>
+      <md-button>
+        Ne kadar kaldı?
+      </md-button>
+    </md-fab-actions>
+  </md-toolbar>
+</md-fab-toolbar>
+
+  <div layout="row" class="full-content">
+    <md-content class="move-up" flex>
+       <p layout-margin>
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis varius nibh, eget fringilla massa. Phasellus sollicitudin, tellus vel hendrerit commodo, eros purus placerat mi, a tristique orci lacus egestas lectus. Aenean congue rutrum suscipit. Aliquam erat volutpat. Sed sollicitudin dui sit amet sapien luctus tincidunt. In eu ipsum lectus. Duis bibendum auctor lorem hendrerit tempor. Aenean rhoncus, dui in mattis interdum, ex erat ultricies libero, ut tincidunt lectus ex finibus lacus. Integer iaculis, nunc tempus finibus cursus, elit eros dictum dolor, et dapibus lectus sapien at risus. Quisque ac metus in turpis malesuada rutrum sed quis quam. Mauris pulvinar dignissim nunc a laoreet. Nam a arcu at sem imperdiet iaculis.
+       </p>
+     </md-content>
+  </div>
+
+  <!--
   <div layout="row" flex>
     <md-sidenav layout="column" class="md-sidenav-left md--white-frame-z2" md-component-id="left">
       <md-toolbar class="md-theme-light">
@@ -28,6 +59,7 @@
       <md-content layout="column" flex> Page Content</md-content>
     </div>
   </div>
+-->
   <!--
   <md-content>
 

@@ -1,1 +1,20 @@
 @import url(//fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700,700italic,400italic);
+
+.relative {
+  position: relative;
+  width: 100%;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+.full-content {
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  min-width: 100%;
+}
