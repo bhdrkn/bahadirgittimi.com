@@ -61,6 +61,7 @@ module bahadirgittimi {
   export class TimeDialogController {
     private dialogService : ng.material.IDialogService;
 
+    /* @ngInject */
     constructor($mdDialog : ng.material.IDialogService){
         this.dialogService = $mdDialog;
     }
