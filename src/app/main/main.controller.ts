@@ -11,7 +11,7 @@ module bahadirgittimi {
     /* @ngInject */
     constructor (yesNoService : YesNoService, expectedAnswer : string, $mdDialog : ng.material.IDialogService) {
       this.awesomeThings = new Array();
-      yesNoService.getGif(expectedAnswer).then((data : any) =>{
+      yesNoService.getGif(expectedAnswer).then((data : any) => {
         this.imageURL = data.image;
       });
       this.answerText = ('no' === expectedAnswer ? 'HAYIR' : 'EVET');

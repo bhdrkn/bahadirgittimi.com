@@ -7,8 +7,6 @@
 /// <reference path="main/main.controller.ts" />
 /// <reference path="./components/yesnowtf/yesno.service.ts"/>
 
-declare var mdSidenav : any;
-
 module bahadirgittimi {
   'use strict';
 
