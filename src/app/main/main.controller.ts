@@ -3,17 +3,16 @@ module bahadirgittimi {
 
   export class MainController {
     public awesomeThings: string[];
-    public mdSidenav;
+    public imageURL : string;
+    public answerText : string;
 
     /* @ngInject */
-    constructor ($mdSidenav : angular.material.ISidenavService) {
+    constructor (yesNoService : YesNoService, expectedAnswer : string) {
       this.awesomeThings = new Array();
-      this.mdSidenav = $mdSidenav;
-    }
-
-    toggleSidenav(menuId : string){
-      var sideNavObj : angular.material.ISidenavObject = this.mdSidenav(menuId);
-      sideNavObj.toggle();
+      yesNoService.getGif(expectedAnswer).then((data : any) =>{
+        this.imageURL = data.image;
+      });
+      this.answerText = ('no' === expectedAnswer ? 'HAYIR' : 'EVET');
     }
   }
 }

@@ -1,6 +1,6 @@
 <div ng-controller="MainController as main" ng-cloak="" layout="column">
 
-  <div class="background" style="opacity:1;background-image:url(assets/images/test.gif)"/div>
+  <div class="background" style="opacity:1;background-image:url({{main.imageURL}})"/div>
 
   <md-fab-toolbar md-open="false" md-direction="right" class="overlay-content">
   <md-fab-trigger class="align-with-text">
@@ -25,7 +25,7 @@
 
 <div layout="row" layout-align="center center" class="main-center">
   <h1 class="answer">
-    HAYIR
+    {{main.answerText}}
   </h1>
 </div>
 <!--

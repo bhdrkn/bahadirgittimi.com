@@ -21,6 +21,7 @@
         "!node_modules/**"
     ],
     "files": [
+        "src/app/components/yesnowtf/yesno.service.ts",
         "src/app/index.config.ts",
         "src/app/index.module.ts",
         "src/app/index.route.ts",
