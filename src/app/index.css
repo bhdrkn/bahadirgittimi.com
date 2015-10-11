@@ -13,7 +13,7 @@
 }
 
 .full-content {
-  height: 100%;
+  opacity: 1;
   min-height: 100%;
   width: 100%;
   min-width: 100%;
