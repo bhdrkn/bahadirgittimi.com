@@ -1,5 +1,9 @@
 @import url(//fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700,700italic,400italic);
 
+html{
+  height: 100%;
+}
+
 .relative {
   position: relative;
   width: 100%;
@@ -15,6 +19,32 @@
 .full-content {
   opacity: 1;
   min-height: 100%;
-  width: 100%;
-  min-width: 100%;
+}
+
+.main-center {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+}
+
+.answer {
+  margin: 0;
+  line-height: 1;
+  color: white;
+  text-shadow: 0 0 20px rgba(0,0,0,0.25),0 2px 2px rgba(0,0,0,0.5);
+  font-size: 80px;
+  opacity: 1;
+}
+
+.background {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
