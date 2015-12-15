@@ -11,7 +11,7 @@ module bahadirgittimi {
   'use strict';
 
   angular.module('bahadirgittimi', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngResource', 'ngRoute', 'ngMaterial', 'timer'])
-    .constant('expectedAnswer', 'no')
+    .constant('expectedAnswer', 'yes')
     .config(Config)
     .config(RouterConfig)
     .run(RunBlock)
